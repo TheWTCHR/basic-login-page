@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-neutral-900 text-white;
+  }
+  .text {
+    @apply float-left mb-4 text-3xl
+  }
+  .login {
+    @apply text-black h-screen flex justify-center items-center text-center flex-col;
+  }
+  .password {
+    @apply text-black mt-2
+  }
+  .loginbutton {
+    @apply mt-3 float-right font-bold py-2 px-4 rounded bg-green-500;
+  }
+  .loginbutton:hover {
+    @apply bg-blue-500
+  }
+  .goregisterbutton {
+    @apply mt-3 float-left font-bold py-2 px-4 rounded bg-red-500;
+  }
+  .goregisterbutton:hover {
+    @apply bg-blue-500
+  }
+  .registerbutton {
+    @apply mt-3 float-right font-bold py-2 px-4 rounded bg-green-500;
+  }
+  .registerbutton:hover {
+    @apply bg-blue-500
+  }
+}
