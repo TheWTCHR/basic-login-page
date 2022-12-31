@@ -1,4 +1,3 @@
-import { NuxtLink } from '../.nuxt/components';
 <template>
     <div class="Index">
         <div class="login">
@@ -39,7 +38,6 @@ export default {
     methods: {
         async login() {
             let res =  await axios.get(`http://localhost:3000/api/login?mail=${this.email}&pass=${this.password}`, { headers: {"Auth": "witcherapikey"}})
-            console.log(31)
             if(res.data) {
                 alert("You have logged in successfully!");
             } else {
@@ -49,5 +47,3 @@ export default {
     }
 }
 </script>
-<style>
-</style>
